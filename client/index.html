@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather API Client</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<header>
+	<div class="overlay">
+		<h1>WeatherAPI</h1>
+		<h3>Thanks for Choosing US</h3>
+		<p>Weather information based on the type of subscription plan you have opted.</p>
+		<br>
+	</div>
+	</header>
+
+	<div class="limiter">
+		<div class="container-table100">
+				<form id="form_api" method="post">
+					<input placeholder="API" name="api" id="api">
+					<select class="opt" name="city" id="city">
+					</select>
+					<button type="submit">Submit</button>
+					<p id="goesWrong"></p>
+				</form>
+			<div class="wrap-table100" id="status">
+
+				<h3>Showing Result</h3>
+				<div class="table100" id="tableContainer">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
